@@ -2,7 +2,7 @@ type Product
 {   id:Int
     name:String
     price:Float
-
+    cretateAt:Date
 }
 
 
