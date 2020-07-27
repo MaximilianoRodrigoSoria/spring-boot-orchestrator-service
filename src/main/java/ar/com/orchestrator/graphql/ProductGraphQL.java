@@ -12,8 +12,8 @@ public class ProductGraphQL implements GraphQLQueryResolver {
     private ProductFeingClient productFeingClient;
 
     public Product getProduct(Long id){
-
-        return  productFeingClient.findById(id).getBody();
+        Product product = productFeingClient.findById(id).getBody();
+        return  product;
     }
 
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name="product-service")
+@FeignClient(name="${feing.client.product.target}")
 public interface ProductFeingClient {
 	
 	@GetMapping("/product/find-all")
